@@ -1,0 +1,75 @@
+@import 'config';
+@import "components/vars";
+@import "components/mixins";
+
+// CUSTOM USER STYLES & IMPORTS
+.wrap {
+  max-width: 962px;
+  margin-left: auto;
+  margin-right: auto;
+  &-nav {
+    display: flex;
+    align-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    &__logo {
+
+    }
+    &__list {
+      display: flex;
+      justify-content: flex-end;
+    }
+    &__link {
+      font-size: 16px;
+      font-weight: bold;
+      color: $main-text;
+      transition: $main-transition;
+      margin-right: 30px;
+      letter-spacing: 0.6px;
+      border-bottom: 3px solid transparent;
+      padding-bottom: 8px;
+      &:last-child {
+        margin-right: 0;
+      }
+      &:hover {
+        text-decoration: none;
+        color: $main-text;
+        border-bottom: 3px solid $main;
+      }
+      &-active {
+        border-bottom: 3px solid $main;
+      }
+    }
+  }
+  &-content {
+    margin-top: 132px;
+    &__title {
+      color: $main;
+      font-weight: bold;
+      font-size: 50px;
+      margin-bottom: 0;
+      line-height: 45px;
+    }
+    &__subtitle {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 22px;
+      font-weight: 500;
+      color: $main;
+    }
+    &__text {
+      margin-top: 65px;
+      margin-bottom: 0;
+      font-style: normal;
+      line-height: 64px;
+      font-size: 50px;
+      color: $main-text;
+      font-weight: 600;
+    }
+  }
+  &-company {
+
+  }
+}
+
