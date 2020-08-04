@@ -45,13 +45,15 @@
     margin-top: 132px;
     &__title {
       color: $main;
+      font-family: 'Prompt', sans-serif;
       font-weight: bold;
       font-size: 50px;
       margin-bottom: 0;
-      line-height: 45px;
+      line-height: 40px;
     }
     &__subtitle {
       margin-top: 0;
+      font-family: 'Prompt', sans-serif;
       margin-bottom: 0;
       font-size: 22px;
       font-weight: 500;
