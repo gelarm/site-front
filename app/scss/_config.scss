@@ -6,7 +6,7 @@ $system: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Fa
 $montserrat: 'Montserrat', sans-serif; // montserrat Font Family
 
 // Bootstrap compatible gutter variable => $gutter
-$grid-gutter-width: 20px;
+$grid-gutter-width: 10px;
 $gutter: $grid-gutter-width;
 
 // IMPORT SECTION
@@ -34,6 +34,11 @@ $gutter: $grid-gutter-width;
 //@include font('Montserrat', normal, 700, '../fonts/montserrat-bold-webfont.woff2');
 
 // GENERAL DOCUMENT STYLES
+
+button:focus {
+	outline: none;
+
+}
 
 ::placeholder {
 	color: #666;
