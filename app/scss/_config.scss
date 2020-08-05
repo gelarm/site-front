@@ -8,11 +8,15 @@ $montserrat: 'Montserrat', sans-serif; // montserrat Font Family
 // Bootstrap compatible gutter variable => $gutter
 $grid-gutter-width: 10px;
 $gutter: $grid-gutter-width;
+$breadcrumb-divider: quote(">");
+$breadcrumb-bg: none;
+$breadcrumb-font-size: 14px;
+$breadcrumb-item-padding: 10px;
 
 // IMPORT SECTION
 
 @import 'node_modules/bootstrap/scss/bootstrap'; // Bootstrap Reboot collection
- // Bootstrap Breakpoints mixin
+// Bootstrap Breakpoints mixin
 // @import 'node_modules/bootstrap/scss/bootstrap-grid.scss'; // Optional Bootstrap Grid
 // @import 'node_modules/bootstrap/scss/utilities/_sizing.scss'; // Optional Bootstrap Utilites
 
@@ -36,30 +40,38 @@ $gutter: $grid-gutter-width;
 // GENERAL DOCUMENT STYLES
 
 button:focus {
-	outline: none;
+  outline: none;
 
 }
 
 ::placeholder {
-	color: #666;
+  color: #666;
 }
 
 ::selection {
-	background-color: $accent;
-	color: #fff;
+  background-color: $accent;
+  color: #fff;
 }
 
 input, textarea {
-	outline: none;
-	&:focus:required:invalid { border-color: red }
-	&:required:valid { border-color: green }
+  outline: none;
+
+  &:focus:required:invalid {
+    border-color: red
+  }
+
+  &:required:valid {
+    border-color: green
+  }
 }
 
+
+
 body {
-	font-family: $montserrat;
-	font-size: $fontsize;
-	min-width: 320px;
-	position: relative;
-	line-height: 1.65;
-	overflow-x: hidden;
+  font-family: $montserrat;
+  font-size: $fontsize;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.65;
+  overflow-x: hidden;
 }
