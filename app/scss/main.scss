@@ -515,22 +515,22 @@ h1, h2, h3, h4, h5, p {
         }
       }
 
-      .breadcrumb {
-        padding: 0;
-        margin-bottom: 8px;
 
-        .breadcrumb-item {
-          font-weight: normal;
-          font-size: 14px;
-          line-height: 21px;
-        }
+    }
+    .breadcrumb {
+      padding: 0;
+      margin-bottom: 8px;
 
-        .breadcrumb-item.active {
-          color: $main-text;
-        }
+      .breadcrumb-item {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 21px;
+      }
+
+      .breadcrumb-item.active {
+        color: $main-text;
       }
     }
-
     &__subtext {
       margin-top: 22px;
       display: inline-block;
@@ -689,6 +689,42 @@ h1, h2, h3, h4, h5, p {
         svg {
           margin-left: 17px;
         }
+      }
+    }
+  }
+
+  &-product {
+    margin-top: 121px;
+    &__title {
+      font-weight: bold;
+      font-size: 50px;
+      line-height: 75px;
+      color: $main;
+    }
+    &__subtitle {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 32px;
+      color: $main-text;
+      max-width: 350px;
+      text-align: center;
+    }
+    &__list {
+      margin-top: 110px;
+    }
+    &__card {
+      padding: 20px;
+      background: #F4FAFF;
+      border-radius: 3px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      img {
+        width: 72px;
+        height: 72px;
+        margin-bottom: 39px;
       }
     }
   }

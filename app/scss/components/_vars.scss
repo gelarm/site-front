@@ -6,14 +6,13 @@ $main-white: #ffffff;
 $main-card: #F4FAFF;
 
 //анимация
-$main-transition: .6s ease-in-out;
+$main-transition: background .6s, color .3s, border .4s;
 
 //border-radius
 $main-border-radius: 3px;
 
 //default
 $default-fontSize: 20px
-
 
 
 
