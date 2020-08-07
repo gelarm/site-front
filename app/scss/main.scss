@@ -80,6 +80,20 @@ h1, h2, h3, h4, h5, p {
       path.middle {
         stroke-dasharray: 240px, 240px;
       }
+      &-active {
+        svg {
+          path.top {
+            stroke-dashoffset: -650px;
+          }
+          path.bottom {
+            stroke-dashoffset: -650px;
+          }
+          path.middle {
+            stroke-dasharray: 1px, 220px;
+            stroke-dashoffset: -145px;
+          }
+        }
+      }
     }
 
     &__list {
