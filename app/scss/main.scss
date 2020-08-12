@@ -55,6 +55,9 @@ h1, h2, h3, h4, h5, p {
       margin-left: auto;
       border: none;
       background: none;
+      z-index: 999;
+      position: absolute;
+      right: 1px;
       @media (min-width: 768px) {
         display: none;
       }
@@ -98,12 +101,37 @@ h1, h2, h3, h4, h5, p {
     }
 
     &__list {
-      display: none;
+      display: block;
       justify-content: flex-end;
       flex-direction: column;
+      right: -270px; /* прячем меню */
+      height: 100%;
+      top: 0;
+      position: fixed;
+      width: 0;
+      z-index: 1;
+      transition: width  .5s ;
+
       @media (min-width: 768px) {
         display: flex;
         flex-direction: row;
+        position: unset;
+        left: auto;
+        width: auto;
+        right: 0;
+      }
+      &-active {
+        display: flex!important;
+        background: $main;
+        width: 150px;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        transition: width .5s;
+        right: 0;
+        .wrap-nav__link {
+          margin-right: 0;
+        }
       }
     }
 
@@ -629,6 +657,10 @@ h1, h2, h3, h4, h5, p {
     .breadcrumb {
       padding: 0;
       margin-bottom: 8px;
+      display: none;
+      @media (min-width: 768px) {
+        display: flex;
+      }
 
       .breadcrumb-item {
         font-weight: normal;
