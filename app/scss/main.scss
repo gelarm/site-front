@@ -122,12 +122,13 @@ h1, h2, h3, h4, h5, p {
       }
       &-active {
         display: flex!important;
-        background: $main;
+        background: white;
         width: 150px;
         justify-content: center;
         align-content: center;
         align-items: center;
         transition: width .5s;
+        box-shadow: 0 14px 25px rgba(0, 0, 0, 0.16);
         right: 0;
         .wrap-nav__link {
           margin-right: 0;
